@@ -1,6 +1,6 @@
 require('./styles/app.css');
 
-import BookService from './services/BookServices.js'
+import BookService from './services/BookServices'
 
 document.getElementById('book-form')
     .addEventListener('submit', e => {
@@ -16,8 +16,8 @@ document.getElementById('book-form')
         formData.append('isbn', isbn);
 
 
-        const BookService = new BookService()
-        BookService.postBook(formData)
+        const bookService = new BookService()
+        bookService.postBook(formData)
 
         e.preventDefault();
 
