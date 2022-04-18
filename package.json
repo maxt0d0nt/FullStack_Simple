@@ -7,7 +7,6 @@
     "start": "cross-env NODE_ENV=production node backend/index.js",
     "build": "cross-env NODE_ENV=production webpack",
     "server:dev": "webpack-dev-server"
-
   },
   "keywords": [],
   "author": "",
