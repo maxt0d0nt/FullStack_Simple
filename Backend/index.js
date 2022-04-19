@@ -5,8 +5,8 @@ if (process.env.NODE_ENV === 'development'){
 
 const express = require('express');
 const morgan = require('morgan');
-const { diskStorage } = require('multer');
 const multer = require('multer');
+const { diskStorage } = require('multer');
 const path = require('path');
 const cors = require('cors');
 
@@ -19,7 +19,7 @@ app.set('port', process.env.PORT);
 //midelware
 app.use(morgan('dev'));
 const storage = multer.diskStorage({
-    destination: path.join(__dirname, 'public/uploads'),
+    destination: path.join(__dirname, 'public/uploadsimages'),
     filename(req, file, cb){
         cb(null, new Date().getTime() + path.extname(file.originalname));
     }

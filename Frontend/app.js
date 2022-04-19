@@ -22,7 +22,18 @@ document.getElementById('book-form')
 
         const ui = new UI();
         ui.addNewBook(formData);
-
+        ui.renderMessage('New Book Added', 'success', 3000);
         e.preventDefault();
 
-    })
+    });
+
+    document.getElementById('books-cards')
+        .addEventListener('click', e => {
+            if (e.target.classList.contains('delete')) {
+            const ui = new UI()
+            ui.deleteBook(e.target.getAttribute('_id'))
+            ui.renderMessage('Book Eliminated', 'danger', 3000);
+        };
+
+                e.preventDefault();
+        })
