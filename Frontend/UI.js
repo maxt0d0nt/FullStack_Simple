@@ -16,7 +16,7 @@ class UI{
                 <div class='card m-2 border border-3 border-dark'>
                     <div class = "row">
                         <div class = "col-md-4">
-                            <img src="http://localhost:4000/api/books${book.imagePath}" alt="" class="img-fluid" />
+                            <img src="http://wwww.localhost:4000${book.imagePath}" alt="" class="img-fluid" />
                         </div>
                         <div class = "col-md-8">
                             <div class = "card-block-secundary px-2">

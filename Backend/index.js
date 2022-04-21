@@ -33,7 +33,7 @@ app.use(cors());
 app.use('/api/books', require('./routes/books'));
 
 //statics file
-app.use(express.static(path.join(__dirname, 'public/uploads')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 //strat the server
